@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Téléchargeur de Vidéos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Téléchargeur de Vidéos</h1>
+            <p>Collez une URL de TikTok, Instagram ou Facebook</p>
+        </header>
+
+        <main>
+            <form id="download-form" class="download-form">
+                <input type="url" id="url-input" placeholder="Collez le lien de la vidéo ici..." required>
+                <button type="submit" id="download-btn">Télécharger</button>
+            </form>
+
+            <div id="error-message" class="error-message hidden"></div>
+
+            <!-- La section des résultats sera affichée ici -->
+            <div id="result" class="result-section hidden">
+                <img id="thumbnail" src="" alt="Aperçu de la vidéo" class="thumbnail">
+                <h2 id="video-title"></h2>
+                <div id="download-links" class="download-links">
+                    <!-- Les liens de téléchargement seront insérés par JS -->
+                </div>
+            </div>
+
+            <!-- Espace réservé pour la monétisation -->
+            <div class="ad-placeholder">
+                <p>Espace publicitaire</p>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>Ce service est destiné à un usage personnel uniquement. Tous les droits d'auteur appartiennent à leurs propriétaires respectifs.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
