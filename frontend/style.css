@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: #7f8c8d;
+    margin-bottom: 2rem;
+}
+
+.download-form {
+    display: flex;
+    gap: 10px;
+}
+
+#url-input {
+    flex-grow: 1;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+#download-btn {
+    padding: 15px 25px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#download-btn:hover {
+    background-color: #2980b9;
+}
+
+#download-btn:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+.hidden {
+    display: none;
+}
+
+.error-message {
+    margin-top: 20px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.result-section {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ecf0f1;
+    border-radius: 8px;
+}
+
+.thumbnail {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#video-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.download-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.download-links a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #2ecc71;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.download-links a:hover {
+    background-color: #27ae60;
+}
+
+.ad-placeholder {
+    margin-top: 30px;
+    padding: 20px;
+    border: 2px dashed #bdc3c7;
+    border-radius: 8px;
+    color: #7f8c8d;
+}
+
+footer {
+    text-align: center;
+    color: #95a5a6;
+    font-size: 0.8rem;
+    padding-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .download-form {
+        flex-direction: column;
+    }
+}
