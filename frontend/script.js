@@ -26,8 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             // Appel à l'API backend
-            const response = await fetch(`http://localhost:5000/api/download?url=${encodeURIComponent(url)}`);
-            const data = await response.json();
+            const response = await fetch(`https://downtest.onrender.com/api/download?url=${encodeURIComponent(url)}`);
 
             if (data.success) {
                 displayResults(data);
