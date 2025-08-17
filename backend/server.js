@@ -6,7 +6,9 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Middleware
-app.use(cors()); // Permet les requêtes depuis votre frontend
+app.use(cors({
+  origin: 'https://tfooo.com' 
+})); // Permet les requêtes depuis votre frontend
 app.use(express.json());
 
 // --- Fonctions de téléchargement (Simulées) ---
